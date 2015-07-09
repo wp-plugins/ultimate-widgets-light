@@ -58,7 +58,7 @@ Do you have questions or issues with this plugin? Use these support forum.
 
 == Screenshots ==
 
-1. screenshot.jpg
+1. screenshot-1.png
 
 == Changelog ==
 
