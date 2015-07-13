@@ -12,7 +12,17 @@ class uwl_mailchimp extends WP_Widget {
 		);
 		// register the widget
 		$this->WP_Widget('uwl_mailchimp', __( 'UWL - MailChimp', 'kho' ), $widget_ops);
+
+		if ( is_active_widget(false, false, $this->id_base) ) {
+			if ( '1' !== uwl_option( 'minify_css', '1' ) ) {
+				add_action( 'wp_enqueue_scripts', array(&$this,'uwl_mailchimp_script'), 15);
+			}
+		}
 	
+	}
+
+	function uwl_mailchimp_script() {
+		wp_enqueue_style( 'uwl-mailchimp', uwl_plugin_url( 'assets/css/styles/widgets/mailchimp.css' ) );
 	}
 	
 	// display the widget in the theme

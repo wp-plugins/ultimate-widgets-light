@@ -12,7 +12,24 @@ class uwl_flickr extends WP_Widget {
 		);
 		// register the widget
 		$this->WP_Widget('uwl_flickr', __( 'UWL - Flickr Stream', 'kho' ), $widget_ops);
+
+		if ( is_active_widget(false, false, $this->id_base) ) {
+			if ( '1' !== uwl_option( 'minify_css', '1' ) ) {
+				add_action( 'wp_enqueue_scripts', array(&$this,'uwl_flickr_script'), 15);
+			}
+			if ( '1' !== uwl_option( 'minify_js', '1' ) ) {
+				add_action( 'wp_footer', array(&$this,'uwl_flickr_js'));
+			}
+		}
 	
+	}
+
+	function uwl_flickr_script() {
+		wp_enqueue_style( 'uwl-flickr', uwl_plugin_url( 'assets/css/styles/widgets/flickr.css' ) );
+	}
+
+	function uwl_flickr_js() {
+		wp_enqueue_script('uwl-flickr-js', uwl_plugin_url( 'assets/js/widgets/flickr.js' ), UWL_VERSION );
 	}
 	
 	// display the widget in the theme

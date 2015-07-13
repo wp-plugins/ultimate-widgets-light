@@ -4,7 +4,7 @@ Donate link: http://khositeweb.com/ultimate-widgets/
 Tags: about me widget, contact info widget, facebook widget, flickr widget, google map widget, login widget, mailchimp widget, posts slider widget, slideshow widget, social widget, soundcloud widget, tabs widget, testimonial widget, twitter widget, video widget
 Requires at least: 4.1
 Tested up to: 4.2.2
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,10 @@ Do you have questions or issues with this plugin? Use these support forum.
 1. screenshot-1.png
 
 == Changelog ==
+
+= 1.0.1 =
+
+* Option to load CSS and JS when the widgets are in the page.
 
 = 1.0 =
 

@@ -7,7 +7,7 @@ Author: Khothemes
 Author URI: http://khositeweb.com/
 Text Domain: kho
 Domain Path: /languages/
-Version: 1.0
+Version: 1.0.1
 */
 
 /*  Copyright 2007-2015 Khothemes
@@ -29,7 +29,7 @@ Version: 1.0
 
 define( 'UWL_PLUGIN', __FILE__ );
 define( 'UWL_PLUGIN_DIR', untrailingslashit( dirname( UWL_PLUGIN ) ) );
-define( 'UWL_VERSION', '1.0' );
+define( 'UWL_VERSION', '1.0.1' );
 
 function uwl_plugin_url( $path = '' ) {
 	$url = plugins_url( $path, UWL_PLUGIN );
@@ -84,21 +84,6 @@ function uwl_plugin_css() {
 
 		// Responsive
 		wp_enqueue_style( 'uwl-responsive', uwl_plugin_url( 'assets/css/styles/responsive.css' ) );
-
-		$css_widgets = array(
-			'about-me',
-			'contact-info',
-			'flickr',
-			'mailchimp',
-			'menu',
-		);
-
-		// Loop through widgets and load their files
-		foreach ( $css_widgets as $css_widget ) {
-			if ( '1' == uwl_option( $css_widget, '1' ) ) {
-				wp_enqueue_style( 'uwl-'. $css_widget .'', uwl_plugin_url( 'assets/css/styles/widgets/'. $css_widget .'.css' ) );
-			}
-		}
 	}
 
 	// RTL style
@@ -107,9 +92,11 @@ function uwl_plugin_css() {
 	}
 }
 
-add_action( 'wp_enqueue_scripts', 'uwl_plugin_js' );
+add_action( 'wp_footer', 'uwl_plugin_js' );
 function uwl_plugin_js() {
-	wp_enqueue_script('uwl-scripts', uwl_plugin_url( 'assets/js/scripts-min.js' ), array('jquery'), UWL_VERSION );
+	if ( '1' == uwl_option( 'minify_js', '1' ) ) {
+		wp_enqueue_script('uwl-scripts', uwl_plugin_url( 'assets/js/scripts-min.js' ), array('jquery'), UWL_VERSION );
+	}
 }
 
 

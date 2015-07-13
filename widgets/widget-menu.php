@@ -12,7 +12,24 @@ class uwl_menu extends WP_Widget {
 		);
 		// register the widget
 		$this->WP_Widget('uwl_menu', __( 'UWL - Menu', 'kho' ), $widget_ops);
+
+		if ( is_active_widget(false, false, $this->id_base) ) {
+			if ( '1' !== uwl_option( 'minify_css', '1' ) ) {
+				add_action( 'wp_enqueue_scripts', array(&$this,'uwl_menu_script'), 15);
+			}
+			if ( '1' !== uwl_option( 'minify_js', '1' ) ) {
+				add_action( 'wp_footer', array(&$this,'uwl_menu_js'));
+			}
+		}
 	
+	}
+
+	function uwl_menu_script() {
+		wp_enqueue_style( 'uwl-menu', uwl_plugin_url( 'assets/css/styles/widgets/menu.css' ) );
+	}
+
+	function uwl_menu_js() {
+		wp_enqueue_script('uwl-menu-js', uwl_plugin_url( 'assets/js/widgets/menu.js' ), UWL_VERSION );
 	}
 
 	/** @see WP_Widget::widget */

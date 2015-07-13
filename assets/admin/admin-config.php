@@ -7,10 +7,10 @@ if ( ! class_exists( 'Redux' ) ) {
 
 // Add CSS panel
 function uwl_redux_custom_css() {
-    wp_register_style( 'redux-custom-css', uwl_plugin_url( 'assets/admin/redux-custom.css' ), array('redux-admin-css'), time(), 'all' );
-    wp_enqueue_style('redux-custom-css');
+    wp_register_style( 'uwl-redux-custom-css', uwl_plugin_url( 'assets/admin/redux-custom.css' ), array('redux-admin-css'), time(), 'all' );
+    wp_enqueue_style('uwl-redux-custom-css');
 }
-add_action( 'redux/page/uwl_options/enqueue', 'redux_custom_css' );
+add_action( 'redux/page/uwl_options/enqueue', 'uwl_redux_custom_css' );
 
 // Option name where all the Redux data is stored.
 $opt_name = "uwl_options";
@@ -85,6 +85,24 @@ Redux::setSection( $opt_name, array(
     'customizer'    => false,
     'fields'        => array(
         array(
+            'id'        => 'minify_css',
+            'type'      => 'switch', 
+            'title'     => __( 'Minify CSS', 'kho' ),
+            'subtitle'  => __( 'Compress all CSS in a single file or activate the CSS when the widgets are on the page.', 'kho' ),
+            "default"   => '1',
+            'on'        => __( 'On', 'kho' ),
+            'off'       => __( 'Off', 'kho' ),
+        ),
+        array(
+            'id'        => 'minify_js',
+            'type'      => 'switch', 
+            'title'     => __( 'Minify JS', 'kho' ),
+            'subtitle'  => __( 'Compress all JS in a single file or activate the JS when the widgets are on the page.', 'kho' ),
+            "default"   => '1',
+            'on'        => __( 'On', 'kho' ),
+            'off'       => __( 'Off', 'kho' ),
+        ),
+        array(
             'id'        => 'about-me',
             'type'      => 'switch', 
             'title'     => __( 'About Me Widget', 'kho' ),
@@ -136,16 +154,6 @@ Redux::setSection( $opt_name, array(
     'title'         => __( 'Styling', 'kho' ),
     'customizer'    => false,
     'fields'        => array(
-        array(
-            'id'        => 'minify_css',
-            'type'      => 'switch', 
-            'title'     => __( 'Minify CSS', 'kho' ),
-            'subtitle'  => __( 'Compress all styles into a single file.', 'kho' ),
-            "default"   => '1',
-            'on'        => __( 'On', 'kho' ),
-            'off'       => __( 'Off', 'kho' ),
-        ),
-
         array(
             'id'        => 'widgets_style',
             'type'      => 'select',

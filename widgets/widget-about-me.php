@@ -13,7 +13,17 @@ class uwl_about_me extends WP_Widget {
 		);
 		// register the widget
 		$this->WP_Widget('uwl_about_me', __( 'UWL - About Me', 'kho' ), $widget_ops);
+
+		if ( is_active_widget(false, false, $this->id_base) ) {
+			if ( '1' !== uwl_option( 'minify_css', '1' ) ) {
+				add_action( 'wp_enqueue_scripts', array(&$this,'uwl_about_me_script'), 15);
+			}
+		}
 	
+	}
+
+	function uwl_about_me_script() {
+		wp_enqueue_style( 'uwl-about-me', uwl_plugin_url( 'assets/css/styles/widgets/about-me.css' ) );
 	}
 
 	function widget($args, $instance) {
