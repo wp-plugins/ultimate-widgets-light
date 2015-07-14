@@ -14,7 +14,8 @@ Ultimate Widgets plugin allows you to add the most popular widgets like Ads, Con
 
 Customize your sidebar with our awesome widgets, very easy to use, essential, unique & beautiful [PLUGIN DEMO](http://khositeweb.com/preview/ultimate-widgets/).
 
-== Press Commentary ==
+= Press Commentary =
+
 “This is a great little plugin with some good attractive widgets that will come in handy for most websites, saving you the time of coding them by hand or seeking out separate plugins for each feature you wish to add.”<br>
 [wplift](http://wplift.com/custom-widgets-wordpress-plugin/)
 
