@@ -71,6 +71,10 @@ Do you have questions or issues with this plugin? Use these support forum.
 
 == Changelog ==
 
+= 1.0.3 =
+
+* Update redux framework.
+
 = 1.0.2 =
 
 * Improvement of all files.
