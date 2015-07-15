@@ -3,17 +3,19 @@
  * Menu Widget
 */
 class uwl_menu extends WP_Widget {
-	function uwl_menu() {
-		
-		// define widget title and description
-		$widget_ops = array(
-			'classname'		=> 'uwl_widget_wrap uwl_menu_widget',
-			'description'	=> __( 'Displays a menu.', 'kho' )
-		);
-		// register the widget
-		$this->WP_Widget('uwl_menu', __( 'UWL - Menu', 'kho' ), $widget_ops);
 
-		if ( is_active_widget(false, false, $this->id_base) ) {
+	public function __construct() {
+
+        parent::__construct(
+            'uwl_menu',
+            $name = __( 'UWL - Menu', 'kho' ),
+            array(
+                'classname'		=> 'uwl_widget_wrap uwl_menu_widget',
+				'description'	=> __( 'Displays a menu.', 'kho' )
+            )
+        );
+
+        if ( is_active_widget(false, false, $this->id_base) ) {
 			if ( '1' !== uwl_option( 'minify_css', '1' ) ) {
 				add_action( 'wp_enqueue_scripts', array(&$this,'uwl_menu_script'), 15);
 			}
@@ -21,19 +23,19 @@ class uwl_menu extends WP_Widget {
 				add_action( 'wp_footer', array(&$this,'uwl_menu_js'));
 			}
 		}
-	
-	}
 
-	function uwl_menu_script() {
+    }
+
+	public function uwl_menu_script() {
 		wp_enqueue_style( 'uwl-menu', uwl_plugin_url( 'assets/css/styles/widgets/menu.css' ) );
 	}
 
-	function uwl_menu_js() {
+	public function uwl_menu_js() {
 		wp_enqueue_script('uwl-menu-js', uwl_plugin_url( 'assets/js/widgets/menu.js' ), UWL_VERSION );
 	}
 
 	/** @see WP_Widget::widget */
-	function widget($args, $instance) {
+	public function widget($args, $instance) {
 		extract($args);
 		$title 		= apply_filters('widget_title', $instance['title']);
 		$class_wrap = isset( $instance['class_wrap'] ) ? $instance['class_wrap'] : '';
@@ -79,7 +81,7 @@ class uwl_menu extends WP_Widget {
 	}
 
 	/** @see WP_Widget::update */
-	function update( $new_instance, $old_instance ) {
+	public function update( $new_instance, $old_instance ) {
 		$instance 				= $old_instance;
 		$instance['title'] 		= strip_tags($new_instance['title']);
 		$instance['class_wrap'] = strip_tags($new_instance['class_wrap']);
@@ -88,7 +90,7 @@ class uwl_menu extends WP_Widget {
 	}
 
 	/** @see WP_Widget::form */
-	function form( $instance ) {
+	public function form( $instance ) {
 		$title 		= isset( $instance['title'] ) ? $instance['title'] : __('Menu','kho');
 		$class_wrap = isset( $instance['class_wrap'] ) ? $instance['class_wrap'] : '';
 		$nav_menu 	= isset( $instance['nav_menu'] ) ? $instance['nav_menu'] : '';
@@ -121,11 +123,3 @@ class uwl_menu extends WP_Widget {
 	<?php
 	}
 }
-
-// Register the Menu widget
-if ( ! function_exists( 'register_uwl_menu' ) ) {
-    function register_uwl_menu() {
-        register_widget( 'uwl_menu' );
-    }
-}
-add_action( 'widgets_init', 'register_uwl_menu' );

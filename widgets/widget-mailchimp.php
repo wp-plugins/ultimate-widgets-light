@@ -3,30 +3,32 @@
  * MailChimp Widget
 */
 class uwl_mailchimp extends WP_Widget {
-	function uwl_mailchimp() {
-		
-		// define widget title and description
-		$widget_ops = array(
-			'classname'		=> 'uwl_widget_wrap uwl_newsletter_widget',
-			'description'	=> __( 'Displays Mailchimp Subscription Form.', 'kho' )
-		);
-		// register the widget
-		$this->WP_Widget('uwl_mailchimp', __( 'UWL - MailChimp', 'kho' ), $widget_ops);
 
-		if ( is_active_widget(false, false, $this->id_base) ) {
+	public function __construct() {
+
+        parent::__construct(
+            'uwl_mailchimp',
+            $name = __( 'UWL - MailChimp', 'kho' ),
+            array(
+                'classname'		=> 'uwl_widget_wrap uwl_newsletter_widget',
+				'description'	=> __( 'Displays Mailchimp Subscription Form.', 'kho' )
+            )
+        );
+
+        if ( is_active_widget(false, false, $this->id_base) ) {
 			if ( '1' !== uwl_option( 'minify_css', '1' ) ) {
 				add_action( 'wp_enqueue_scripts', array(&$this,'uwl_mailchimp_script'), 15);
 			}
 		}
-	
-	}
 
-	function uwl_mailchimp_script() {
+    }
+
+	public function uwl_mailchimp_script() {
 		wp_enqueue_style( 'uwl-mailchimp', uwl_plugin_url( 'assets/css/styles/widgets/mailchimp.css' ) );
 	}
 	
 	// display the widget in the theme
-	function widget($args, $instance) {
+	public function widget($args, $instance) {
 		extract($args);
 		$title 				= apply_filters('widget_title', $instance['title']);
 		$class_wrap 		= isset( $instance['class_wrap'] ) ? $instance['class_wrap'] : '';
@@ -78,7 +80,7 @@ class uwl_mailchimp extends WP_Widget {
 	}
 	
 	// update the widget when new options have been entered
-	function update( $new_instance, $old_instance ) {
+	public function update( $new_instance, $old_instance ) {
 		$instance 						= $old_instance;
 		$instance['title'] 				= strip_tags($new_instance['title']);
 		$instance['class_wrap'] 		= strip_tags($new_instance['class_wrap']);
@@ -91,7 +93,7 @@ class uwl_mailchimp extends WP_Widget {
 	}
 	
 	// print the widget option form on the widget management screen
-	function form( $instance ) {
+	public function form( $instance ) {
 		$instance = wp_parse_args( (array) $instance, array(
 			'title' 			=> __('Newsletter','kho'),
 			'class_wrap' 		=> '',
@@ -143,11 +145,3 @@ class uwl_mailchimp extends WP_Widget {
 	<?php
 	}
 }
-
-// Register the MailChimp widget
-if ( ! function_exists( 'register_uwl_mailchimp' ) ) {
-    function register_uwl_mailchimp() {
-        register_widget( 'uwl_mailchimp' );
-    }
-}
-add_action( 'widgets_init', 'register_uwl_mailchimp' );

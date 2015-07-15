@@ -3,29 +3,31 @@
  * Contact Info Widget
 */
 class uwl_contact_info extends WP_Widget {
-	function uwl_contact_info() {
 
-		// define widget title and description
-		$widget_ops = array(
-			'classname'		=> 'uwl_widget_wrap uwl_contact_info_widget',
-			'description'	=> __( 'Adds support for Contact Info.', 'kho' )
-		);
-		// register the widget
-		$this->WP_Widget('uwl_contact_info', __( 'UWL - Contact Info', 'kho' ), $widget_ops);
-		
-		if ( is_active_widget(false, false, $this->id_base) ) {
+	public function __construct() {
+
+        parent::__construct(
+            'uwl_contact_info',
+            $name = __( 'UWL - Contact Info', 'kho' ),
+            array(
+                'classname'		=> 'uwl_widget_wrap uwl_contact_info_widget',
+				'description'	=> __( 'Adds support for Contact Info.', 'kho' )
+            )
+        );
+
+        if ( is_active_widget(false, false, $this->id_base) ) {
 			if ( '1' !== uwl_option( 'minify_css', '1' ) ) {
 				add_action( 'wp_enqueue_scripts', array(&$this,'uwl_contact_info_script'), 15);
 			}
 		}
-	
-	}
 
-	function uwl_contact_info_script() {
+    }
+
+	public function uwl_contact_info_script() {
 		wp_enqueue_style( 'uwl-contact-info', uwl_plugin_url( 'assets/css/styles/widgets/contact-info.css' ) );
 	}
 
-	function widget($args, $instance) {
+	public function widget($args, $instance) {
 		extract($args);
 		$title 		= apply_filters('widget_title', $instance['title']);
 		$class_wrap = isset( $instance['class_wrap'] ) ? $instance['class_wrap'] : '';
@@ -150,7 +152,7 @@ class uwl_contact_info extends WP_Widget {
 		echo $after_widget;
 	}
 
-	function update($new_instance, $old_instance) {
+	public function update($new_instance, $old_instance) {
 		$instance 				= $old_instance;
 		$instance['title'] 		= $new_instance['title'];
 		$instance['class_wrap'] = $new_instance['class_wrap'];
@@ -169,7 +171,7 @@ class uwl_contact_info extends WP_Widget {
 		return $instance;
 	}
 
-	function form($instance) {
+	public function form($instance) {
 		$instance 	= wp_parse_args( (array) $instance, array(
 			'title' 		=> __('Contact Info','kho'),
 			'class_wrap' 	=> '',
@@ -249,11 +251,3 @@ class uwl_contact_info extends WP_Widget {
 	<?php
 	}
 }
-
-// Register the Contact Info widget
-if ( ! function_exists( 'register_uwl_contact_info' ) ) {
-    function register_uwl_contact_info() {
-        register_widget( 'uwl_contact_info' );
-    }
-}
-add_action( 'widgets_init', 'register_uwl_contact_info' );

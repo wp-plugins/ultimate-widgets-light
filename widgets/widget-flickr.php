@@ -3,17 +3,19 @@
  * Flickr Widget
 */
 class uwl_flickr extends WP_Widget {
-	function uwl_flickr() {
 
-		// define widget title and description
-		$widget_ops = array(
-			'classname'		=> 'uwl_widget_wrap uwl_flickr_widget',
-			'description'	=> __( 'Pulls in images from your Flickr account.', 'kho' )
-		);
-		// register the widget
-		$this->WP_Widget('uwl_flickr', __( 'UWL - Flickr Stream', 'kho' ), $widget_ops);
+	public function __construct() {
 
-		if ( is_active_widget(false, false, $this->id_base) ) {
+        parent::__construct(
+            'uwl_flickr',
+            $name = __( 'UWL - Flickr Stream', 'kho' ),
+            array(
+                'classname'		=> 'uwl_widget_wrap uwl_flickr_widget',
+				'description'	=> __( 'Pulls in images from your Flickr account.', 'kho' )
+            )
+        );
+
+        if ( is_active_widget(false, false, $this->id_base) ) {
 			if ( '1' !== uwl_option( 'minify_css', '1' ) ) {
 				add_action( 'wp_enqueue_scripts', array(&$this,'uwl_flickr_script'), 15);
 			}
@@ -21,19 +23,19 @@ class uwl_flickr extends WP_Widget {
 				add_action( 'wp_footer', array(&$this,'uwl_flickr_js'));
 			}
 		}
-	
-	}
 
-	function uwl_flickr_script() {
+    }
+
+	public function uwl_flickr_script() {
 		wp_enqueue_style( 'uwl-flickr', uwl_plugin_url( 'assets/css/styles/widgets/flickr.css' ) );
 	}
 
-	function uwl_flickr_js() {
+	public function uwl_flickr_js() {
 		wp_enqueue_script('uwl-flickr-js', uwl_plugin_url( 'assets/js/widgets/flickr.js' ), UWL_VERSION );
 	}
 	
 	// display the widget in the theme
-	function widget( $args, $instance ) {
+	public function widget( $args, $instance ) {
 		extract($args);
 		
 		$title 		= apply_filters('widget_title', $instance['title']);
@@ -75,7 +77,7 @@ class uwl_flickr extends WP_Widget {
 	}
 	
 	// update the widget when new options have been entered
-	function update( $new_instance, $old_instance ) {
+	public function update( $new_instance, $old_instance ) {
 		$instance 				= $old_instance;
 		$instance['title'] 		= strip_tags($new_instance['title']);
 		$instance['class_wrap'] = strip_tags($new_instance['class_wrap']);
@@ -86,7 +88,7 @@ class uwl_flickr extends WP_Widget {
 	}
 	
 	// print the widget option form on the widget management screen
-	function form( $instance ) {
+	public function form( $instance ) {
 
 		// combine provided fields with defaults
 		$instance 	= wp_parse_args( (array) $instance, array(
@@ -132,11 +134,3 @@ class uwl_flickr extends WP_Widget {
 	<?php
 	}
 }
-
-// Register the Flickr widget
-if ( ! function_exists( 'register_uwl_flickr' ) ) {
-    function register_uwl_flickr() {
-        register_widget( 'uwl_flickr' );
-    }
-}
-add_action( 'widgets_init', 'register_uwl_flickr' );

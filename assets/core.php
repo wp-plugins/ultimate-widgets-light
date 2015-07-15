@@ -2,35 +2,6 @@
 // Core Functions
 
 /*-----------------------------------------------------------------------------------*/
-/*	- Widgets
-/*-----------------------------------------------------------------------------------*/
-if ( !function_exists( 'uwl_custom_widgets' ) ) {
-	function uwl_custom_widgets() {
-
-		// Define array of custom widgets
-		$widgets = array(
-			'about-me',
-			'contact-info',
-			'flickr',
-			'mailchimp',
-			'menu',
-		);
-
-		// Apply filters so you can remove custom widgets via a child theme if wanted
-		$widgets = apply_filters( 'custom_widgets', $widgets );
-
-		// Loop through widgets and load their files
-		foreach ( $widgets as $widget ) {
-			$widget_file = UWL_PLUGIN_DIR .'/widgets/widget-'. $widget .'.php';
-			if ( file_exists( $widget_file ) ) {
-				require_once( $widget_file );
-			}
-		}
-
-	}
-}
-
-/*-----------------------------------------------------------------------------------*/
 /*	- Setup core Framework
 /*-----------------------------------------------------------------------------------*/
 if ( !function_exists( 'uwl_global_config' ) ) {

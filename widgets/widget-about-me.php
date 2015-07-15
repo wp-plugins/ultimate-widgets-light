@@ -3,30 +3,31 @@
  * About Me Widget
 */
 class uwl_about_me extends WP_Widget {
-	
-	function uwl_about_me() {
 
-		// define widget title and description
-		$widget_ops = array(
-			'classname'		=> 'uwl_widget_wrap uwl_about_me_widget',
-			'description'	=> __( 'Adds a About Me widget.', 'kho' )
-		);
-		// register the widget
-		$this->WP_Widget('uwl_about_me', __( 'UWL - About Me', 'kho' ), $widget_ops);
+	public function __construct() {
 
-		if ( is_active_widget(false, false, $this->id_base) ) {
+        parent::__construct(
+            'uwl_about_me',
+            $name = __( 'UWL - About Me', 'kho' ),
+            array(
+                'classname'		=> 'uwl_widget_wrap uwl_about_me_widget',
+				'description'	=> __( 'Adds a About Me widget.', 'kho' )
+            )
+        );
+
+        if ( is_active_widget(false, false, $this->id_base) ) {
 			if ( '1' !== uwl_option( 'minify_css', '1' ) ) {
 				add_action( 'wp_enqueue_scripts', array(&$this,'uwl_about_me_script'), 15);
 			}
 		}
-	
-	}
 
-	function uwl_about_me_script() {
+    }
+
+	public function uwl_about_me_script() {
 		wp_enqueue_style( 'uwl-about-me', uwl_plugin_url( 'assets/css/styles/widgets/about-me.css' ) );
 	}
 
-	function widget($args, $instance) {
+	public function widget($args, $instance) {
 		extract($args);
 		$title 				= apply_filters('widget_title', $instance['title']);
 		$class_wrap 		= isset( $instance['class_wrap'] ) ? $instance['class_wrap'] : '';
@@ -110,7 +111,7 @@ class uwl_about_me extends WP_Widget {
 		echo $after_widget;
 	}
 
-	function update($new_instance, $old_instance) {
+	public function update($new_instance, $old_instance) {
 		$instance = $old_instance;
 
 		$instance['title'] 				= strip_tags( $new_instance['title'] );
@@ -129,7 +130,7 @@ class uwl_about_me extends WP_Widget {
 		return $instance;
 	}
 
-	function form($instance) {
+	public function form($instance) {
 		$instance = wp_parse_args((array) $instance, array(
 			'title'				=> __('About Me','kho'),
 			'class_wrap'		=> '',
@@ -271,11 +272,3 @@ class uwl_about_me extends WP_Widget {
 	<?php
 	}
 }
-
-// Register the About Me widget
-if ( ! function_exists( 'register_uwl_about_me' ) ) {
-    function register_uwl_about_me() {
-        register_widget( 'uwl_about_me' );
-    }
-}
-add_action( 'widgets_init', 'register_uwl_about_me' );
