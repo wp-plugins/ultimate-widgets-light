@@ -31,7 +31,10 @@ Customize your sidebar with our awesome widgets, very easy to use, essential, un
 
 * About Me Widget - A widget that talks to you.
 * Ads Widget - Display ads in your sidebar.
+* Banner Widget - Displays a banner with text.
+* Calendar Widget - Displays a calendar in the sidebar.
 * Contact Info Widget - Add contact info, phone, email, etc.
+* Custom Links Widget - Displays custom links.
 * Facebook Widget - Support for Facebook page plugin.
 * Flickr Stream Widget - Images from your Flickr account.
 * Google Map Widget - Displays google map.
@@ -40,6 +43,7 @@ Customize your sidebar with our awesome widgets, very easy to use, essential, un
 * Menu Widget - Displays a custom menu.
 * Posts Slider Widget - Displays a slider of your posts.
 * Posts Thumbnails Widget - A listing of your recent posts.
+* Search Widget - Displays a search form.
 * Slideshow Widget - Displays a custom menu.
 * Social Buttons Widget - Displays your social profiles.
 * Soundcloud Widget - Displays a soundcloud player.
