@@ -67,22 +67,35 @@ Do you have questions or issues with this plugin? Use these support forum.
 
 == Screenshots ==
 
-1. screenshot-1.png
+1. Screenshot 1
+2. Screenshot 2
+3. Screenshot 3
+4. Screenshot 4
+5. Screenshot 5
+6. Screenshot 6
+7. Screenshot 7
+8. Screenshot 8
+9. Screenshot 9
+10. Screenshot 10
+11. Screenshot 11
+12. Screenshot 12
+13. Screenshot 13
+14. Screenshot 14
 
 == Changelog ==
 
-= 1.0.3 =
+= 1.0.3: July 16, 2015 =
 
 * Update redux framework.
 
-= 1.0.2 =
+= 1.0.2: July 16, 2015 =
 
 * Improvement of all files.
 
-= 1.0.1 =
+= 1.0.1: July 12, 2015 =
 
 * Option to load CSS and JS when the widgets are in the page.
 
-= 1.0 =
+= 1.0: July 7, 2015 =
 
 * initial release.
