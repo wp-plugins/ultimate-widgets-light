@@ -117,7 +117,7 @@ function uwl_nag() {
         	printf(__( '<a class="uwl-close-icon notice-dismiss" href="%1$s"></a>', 'kho'), '?uwl_nag_ignore=0');
         	echo '<div class="icon"><img title="" src="'. uwl_plugin_url( 'assets/images/uw-avatar.png' ) .'" alt="" /></div>';
         		echo '<div class="text">'. __( 'It’s time to upgrade', 'kho' ).' <strong>Ultimate Widgtes Light plugin</strong> '. __( 'to', 'kho' ) .' <strong>PRO</strong> '. __( 'version!', 'kho') .'';
-        		echo '<span>'. __( '20 awesome widgets, 6 styles, essential, unique & beautiful', 'kho' ) .'</span></div>';
+        		echo '<span>'. __( 'A multitude of widgets, several styles, unique, beautiful & original, don&rsquo;t wait!', 'kho' ) .'</span></div>';
         	echo '<div class="uwl-button"><a target="_blank" href="http://codecanyon.net/item/ultimate-widgets-wordpress-plugin/12007937?ref=Khothemes">'. __( 'Purchase', 'kho' ) .'</a></div>';
         echo '</div></div>';
 	}
