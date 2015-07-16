@@ -37,9 +37,6 @@ if ( !function_exists( 'register_uwl_widgets' ) ) {
 	function register_uwl_widgets() {
 
 		if ( '1' == uwl_option( 'about-me', '1' ) ) {
-		    register_widget('uw_about_me');
-		}
-		if ( '1' == uwl_option( 'about-me', '1' ) ) {
 		    register_widget('uwl_about_me');
 		}
 		if ( '1' == uwl_option( 'contact-info', '1' ) ) {
