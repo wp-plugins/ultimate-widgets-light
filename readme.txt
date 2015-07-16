@@ -8,11 +8,13 @@ Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Ultimate Widgets plugin allows you to add the most popular widgets like Contact Info, Facebook Page Plugin, Google Map, Testimonials, Twitter, etc...
+Ultimate Widgets is a plugin which includes several widgets with a style unique covering many different things you may need to add to your website.
 
 == Description ==
 
 Customize your sidebar with our awesome widgets, very easy to use, essential, unique & beautiful [PLUGIN DEMO](http://khositeweb.com/preview/ultimate-widgets/).
+
+Widgets have long been a feature of WordPress with a number of default widgets being bundled, they are a great way to give the user control over placing additional elements on the page in the areas provided by the theme author. A lot of themes will include some custom widgets for different things bundled in the code which is great until you come to change themes, if you change themes you will lose the widgets provided by your old theme and any content you placed in them. One way around this is to use a plugin to handle your custom widgets so you can keep them with any theme.
 
 = Press Commentary =
 
