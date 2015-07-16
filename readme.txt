@@ -4,11 +4,11 @@ Donate link: http://khositeweb.com/ultimate-widgets/
 Tags: about me widget, contact info widget, facebook widget, flickr widget, google map widget, login widget, mailchimp widget, posts slider widget, slideshow widget, social widget, soundcloud widget, tabs widget, testimonial widget, twitter widget, video widget
 Requires at least: 4.1
 Tested up to: 4.2.2
-Stable tag: 1.0.1
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Ultimate Widgets plugin allows you to add the most popular widgets like Ads, Contact Info, Facebook Page Plugin, Google Map, Testomonial, Twitter Widget, Social Widget, Soundclound, etc...
+Ultimate Widgets plugin allows you to add the most popular widgets like Contact Info, Facebook Page Plugin, Google Map, Testimonials, Twitter, etc...
 
 == Description ==
 
