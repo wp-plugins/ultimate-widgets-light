@@ -1,6 +1,6 @@
 === Ultimate Widgets Light ===
 Contributors: Khothemes
-Donate link: http://khositeweb.com/ultimate-widgets/
+Donate link: http://khothemes.com/ultimate-widgets/
 Tags: about me widget, ads widget, banner widget, calendar widget, contact info widget, custom links widget, facebook widget, flickr widget, google map widget, login widget, mailchimp widget, menu widget, posts slider widget, posts thumbnails widget, search widget, slideshow widget, social widget, soundcloud widget, tabs widget, testimonial widget, text widget, twitter widget, video widget, weather widget
 Requires at least: 4.1
 Tested up to: 4.2.2
@@ -12,7 +12,7 @@ Ultimate Widgets is a plugin which includes several widgets with a style unique 
 
 == Description ==
 
-Customize your sidebar with our awesome widgets, very easy to use, essential, unique & beautiful [PLUGIN DEMO](http://khositeweb.com/preview/ultimate-widgets/).
+Customize your sidebar with our awesome widgets, very easy to use, essential, unique & beautiful [PLUGIN DEMO](http://khothemes.com/preview/ultimate-widgets/).
 
 Widgets have long been a feature of WordPress with a number of default widgets being bundled, they are a great way to give the user control over placing additional elements on the page in the areas provided by the theme author. A lot of themes will include some custom widgets for different things bundled in the code which is great until you come to change themes, if you change themes you will lose the widgets provided by your old theme and any content you placed in them. One way around this is to use a plugin to handle your custom widgets so you can keep them with any theme.
 
@@ -23,42 +23,42 @@ Widgets have long been a feature of WordPress with a number of default widgets b
 
 = Light Version =
 
-* [About Me Widget](http://khositeweb.com/preview/ultimate-widgets/uw-about-me/) - A widget that talks to you.
-* [Contact Info Widget](http://khositeweb.com/preview/ultimate-widgets/uw-contact-info/) - Add contact info, phone, email, etc.
-* [Flickr Stream Widget](http://khositeweb.com/preview/ultimate-widgets/uw-flickr-stream/) - Images from your Flickr account.
-* [MailChimp Widget](http://khositeweb.com/preview/ultimate-widgets/uw-mailchimp/) - Displays subscription form.
-* [Menu Widget](http://khositeweb.com/preview/ultimate-widgets/uw-menu/) - Displays a custom menu.
+* [About Me Widget](http://khothemes.com/preview/ultimate-widgets/uw-about-me/) - A widget that talks to you.
+* [Contact Info Widget](http://khothemes.com/preview/ultimate-widgets/uw-contact-info/) - Add contact info, phone, email, etc.
+* [Flickr Stream Widget](http://khothemes.com/preview/ultimate-widgets/uw-flickr-stream/) - Images from your Flickr account.
+* [MailChimp Widget](http://khothemes.com/preview/ultimate-widgets/uw-mailchimp/) - Displays subscription form.
+* [Menu Widget](http://khothemes.com/preview/ultimate-widgets/uw-menu/) - Displays a custom menu.
 
 = Pro Version for only $19 =
 
-* [About Me Widget](http://khositeweb.com/preview/ultimate-widgets/uw-about-me/) - A widget that talks to you.
-* [Ads Widget](http://khositeweb.com/preview/ultimate-widgets/uw-ads/) - Display ads in your sidebar.
-* [Banner Widget](http://khositeweb.com/preview/ultimate-widgets/uw-banner/) - Displays a banner with text.
-* [Calendar Widget](http://khositeweb.com/preview/ultimate-widgets/uw-calendar/) - Displays a calendar in the sidebar.
-* [Contact Info Widget](http://khositeweb.com/preview/ultimate-widgets/uw-contact-info/) - Add contact info, phone, email, etc.
-* [Custom Links Widget](http://khositeweb.com/preview/ultimate-widgets/uw-custom-links/) - Displays custom links.
-* [Facebook Widget](http://khositeweb.com/preview/ultimate-widgets/uw-facebook-like-box/) - Support for Facebook page plugin.
-* [Flickr Stream Widget](http://khositeweb.com/preview/ultimate-widgets/uw-flickr-stream/) - Images from your Flickr account.
-* [Google Map Widget](http://khositeweb.com/preview/ultimate-widgets/uw-google-map/) - Displays google map.
-* [Login Widget](http://khositeweb.com/preview/ultimate-widgets/uw-login/) - Displays login form.
-* [MailChimp Widget](http://khositeweb.com/preview/ultimate-widgets/uw-mailchimp/) - Displays subscription form.
-* [Menu Widget](http://khositeweb.com/preview/ultimate-widgets/uw-menu/) - Displays a custom menu.
-* [Posts Slider Widget](http://khositeweb.com/preview/ultimate-widgets/uw-posts-slider/) - Displays a slider of your posts.
-* [Posts Thumbnails Widget](http://khositeweb.com/preview/ultimate-widgets/uw-posts-thumbnails/) - A listing of your recent posts.
-* [Search Widget](http://khositeweb.com/preview/ultimate-widgets/uw-search/) - Displays a search form.
-* [Slideshow Widget](http://khositeweb.com/preview/ultimate-widgets/uw-slideshow/) - Displays a custom menu.
-* [Social Buttons Widget](http://khositeweb.com/preview/ultimate-widgets/uw-social-buttons/) - Displays your social profiles.
-* [Soundcloud Widget](http://khositeweb.com/preview/ultimate-widgets/uw-soundcloud/) - Displays a soundcloud player.
-* [Tabs Widget](http://khositeweb.com/preview/ultimate-widgets/uw-tabs/) - Displays recent, comments, tags.
-* [Testimonial Widget](http://khositeweb.com/preview/ultimate-widgets/uw-testimonial/) - Displays a testimonial slider.
-* [Text Widget](http://khositeweb.com/preview/ultimate-widgets/uw-text/) - Displays of text or HTML content.
-* [Twitter Widget](http://khositeweb.com/preview/ultimate-widgets/uw-twitter/) - Adds support for your tweets.
-* [Video Widget](http://khositeweb.com/preview/ultimate-widgets/uw-video/) - Add a video in your sidebar.
-* [Weather Widget](http://khositeweb.com/preview/ultimate-widgets/uw-weather/) - Displays weather in the sidebar.
+* [About Me Widget](http://khothemes.com/preview/ultimate-widgets/uw-about-me/) - A widget that talks to you.
+* [Ads Widget](http://khothemes.com/preview/ultimate-widgets/uw-ads/) - Display ads in your sidebar.
+* [Banner Widget](http://khothemes.com/preview/ultimate-widgets/uw-banner/) - Displays a banner with text.
+* [Calendar Widget](http://khothemes.com/preview/ultimate-widgets/uw-calendar/) - Displays a calendar in the sidebar.
+* [Contact Info Widget](http://khothemes.com/preview/ultimate-widgets/uw-contact-info/) - Add contact info, phone, email, etc.
+* [Custom Links Widget](http://khothemes.com/preview/ultimate-widgets/uw-custom-links/) - Displays custom links.
+* [Facebook Widget](http://khothemes.com/preview/ultimate-widgets/uw-facebook-like-box/) - Support for Facebook page plugin.
+* [Flickr Stream Widget](http://khothemes.com/preview/ultimate-widgets/uw-flickr-stream/) - Images from your Flickr account.
+* [Google Map Widget](http://khothemes.com/preview/ultimate-widgets/uw-google-map/) - Displays google map.
+* [Login Widget](http://khothemes.com/preview/ultimate-widgets/uw-login/) - Displays login form.
+* [MailChimp Widget](http://khothemes.com/preview/ultimate-widgets/uw-mailchimp/) - Displays subscription form.
+* [Menu Widget](http://khothemes.com/preview/ultimate-widgets/uw-menu/) - Displays a custom menu.
+* [Posts Slider Widget](http://khothemes.com/preview/ultimate-widgets/uw-posts-slider/) - Displays a slider of your posts.
+* [Posts Thumbnails Widget](http://khothemes.com/preview/ultimate-widgets/uw-posts-thumbnails/) - A listing of your recent posts.
+* [Search Widget](http://khothemes.com/preview/ultimate-widgets/uw-search/) - Displays a search form.
+* [Slideshow Widget](http://khothemes.com/preview/ultimate-widgets/uw-slideshow/) - Displays a custom menu.
+* [Social Buttons Widget](http://khothemes.com/preview/ultimate-widgets/uw-social-buttons/) - Displays your social profiles.
+* [Soundcloud Widget](http://khothemes.com/preview/ultimate-widgets/uw-soundcloud/) - Displays a soundcloud player.
+* [Tabs Widget](http://khothemes.com/preview/ultimate-widgets/uw-tabs/) - Displays recent, comments, tags.
+* [Testimonial Widget](http://khothemes.com/preview/ultimate-widgets/uw-testimonial/) - Displays a testimonial slider.
+* [Text Widget](http://khothemes.com/preview/ultimate-widgets/uw-text/) - Displays of text or HTML content.
+* [Twitter Widget](http://khothemes.com/preview/ultimate-widgets/uw-twitter/) - Adds support for your tweets.
+* [Video Widget](http://khothemes.com/preview/ultimate-widgets/uw-video/) - Add a video in your sidebar.
+* [Weather Widget](http://khothemes.com/preview/ultimate-widgets/uw-weather/) - Displays weather in the sidebar.
 
 = Languages =
 
-I need your help! I'll gladly accept any translation you can provide. Please contact me via [Khositeweb](http://khositeweb.com/contact/) if you have translated the plugin.
+I need your help! I'll gladly accept any translation you can provide. Please contact me via [Khothemes](http://khothemes.com/contact/) if you have translated the plugin.
 Thank you!
 
 == Installation ==
