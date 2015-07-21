@@ -40,6 +40,7 @@ Widgets have long been a feature of WordPress with a number of default widgets b
 * [Facebook Widget](http://khothemes.com/preview/ultimate-widgets/uw-facebook-like-box/) - Support for Facebook page plugin.
 * [Flickr Stream Widget](http://khothemes.com/preview/ultimate-widgets/uw-flickr-stream/) - Images from your Flickr account.
 * [Google Map Widget](http://khothemes.com/preview/ultimate-widgets/uw-google-map/) - Displays google map.
+* [Instagram Widget](http://khothemes.com/preview/ultimate-widgets/uw-instagram/) - Displays Instagram photos.
 * [Login Widget](http://khothemes.com/preview/ultimate-widgets/uw-login/) - Displays login form.
 * [MailChimp Widget](http://khothemes.com/preview/ultimate-widgets/uw-mailchimp/) - Displays subscription form.
 * [Menu Widget](http://khothemes.com/preview/ultimate-widgets/uw-menu/) - Displays a custom menu.
