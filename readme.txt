@@ -3,8 +3,8 @@ Contributors: Khothemes
 Donate link: http://khothemes.com/ultimate-widgets/
 Tags: about me widget, ads widget, banner widget, calendar widget, contact info widget, custom links widget, facebook widget, flickr widget, google map widget, instagram widget, login widget, mailchimp widget, menu widget, posts slider widget, posts thumbnails widget, search widget, slideshow widget, social widget, soundcloud widget, tabs widget, testimonial widget, text widget, twitter widget, video widget, weather widget
 Requires at least: 4.1
-Tested up to: 4.2.2
-Stable tag: 1.0.3
+Tested up to: 4.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
