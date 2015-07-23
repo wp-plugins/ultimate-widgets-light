@@ -278,6 +278,8 @@
                 include_once dirname( __FILE__ ) . '/inc/customizer_fields.php';
                 include_once dirname( __FILE__ ) . '/inc/customizer_devs.php';
 
+                do_action( "redux/extension/customizer/control/includes" );
+
                 //if ($this->parent->args['dev_mode']) {
                 //    $section = new Redux_Customizer_rAds( $wp_customize, 'redux_rAds', array(
                 //        'priority'    => 0,
@@ -420,6 +422,7 @@
                             //'theme_supports' => '',
                             'title'       => $section['title'],
                             'section'     => $section,
+                            'opt_name'    => $this->parent->args['opt_name'],
                             'description' => '',
                         ), $wp_customize );
                         $panel = $section['id'];
@@ -429,6 +432,7 @@
                             'priority'    => $section['priority'],
                             'description' => $section['desc'],
                             'section'     => $section,
+                            'opt_name'    => $this->parent->args['opt_name'],
                             'capability'  => $section['permissions'],
                             'panel'       => $panel
                         ), $wp_customize );
@@ -442,6 +446,7 @@
                             'title'       => $section['title'],
                             'priority'    => $section['priority'],
                             'description' => $section['desc'],
+                            'opt_name'    => $this->parent->args['opt_name'],
                             'section'     => $section,
                             'capability'  => $section['permissions'],
                             'panel'       => $panel
@@ -505,6 +510,7 @@
                                     //'capabilities'      => 'edit_theme_options',
                                     //'capabilities'   => $this->parent->args['page_permissions'],
                                     'transport'         => 'refresh',
+                                    'opt_name'    => $this->parent->args['opt_name'],
                                     //'theme_supports'    => '',
                                     //'sanitize_callback' => '__return_false',
                                     'sanitize_callback' => array( $this, '_field_validation' ),
@@ -601,7 +607,7 @@
             }
 
             public function field_render( $option ) {
-
+echo '1';
                 preg_match_all( "/\[([^\]]*)\]/", $option->id, $matches );
                 $id = $matches[1][0];
                 echo $option->link();
@@ -609,7 +615,7 @@
                 //echo $link;
 
                 $this->parent->_field_input( $this->controls[ $id ] );
-
+                echo '2';
             }
 
             public function customizer_save_before( $plugin_options ) {

@@ -92,6 +92,10 @@ Do you have questions or issues with this plugin? Use these support forum.
 
 == Changelog ==
 
+= 1.0.4: July 23, 2015 =
+
+* Update redux framework.
+
 = 1.0.3: July 16, 2015 =
 
 * Update redux framework.
