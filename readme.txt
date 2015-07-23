@@ -4,7 +4,7 @@ Donate link: http://khothemes.com/ultimate-widgets/
 Tags: about me widget, ads widget, banner widget, calendar widget, contact info widget, custom links widget, facebook widget, flickr widget, google map widget, instagram widget, login widget, mailchimp widget, menu widget, posts slider widget, posts thumbnails widget, search widget, slideshow widget, social widget, soundcloud widget, tabs widget, testimonial widget, text widget, twitter widget, video widget, weather widget
 Requires at least: 4.1
 Tested up to: 4.3
-Stable tag: 1.0.4
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,7 @@ Widgets have long been a feature of WordPress with a number of default widgets b
 * [About Me Widget](http://khothemes.com/preview/ultimate-widgets/uw-about-me/) - A widget that talks to you.
 * [Contact Info Widget](http://khothemes.com/preview/ultimate-widgets/uw-contact-info/) - Add contact info, phone, email, etc.
 * [Flickr Stream Widget](http://khothemes.com/preview/ultimate-widgets/uw-flickr-stream/) - Images from your Flickr account.
+* [Instagram Widget](http://khothemes.com/preview/ultimate-widgets/uw-instagram/) - Displays Instagram photos.
 * [MailChimp Widget](http://khothemes.com/preview/ultimate-widgets/uw-mailchimp/) - Displays subscription form.
 * [Menu Widget](http://khothemes.com/preview/ultimate-widgets/uw-menu/) - Displays a custom menu.
 
@@ -91,6 +92,10 @@ Do you have questions or issues with this plugin? Use these support forum.
 14. Screenshot 14
 
 == Changelog ==
+
+= 1.1: July 24, 2015 =
+
+* New widget UW - Instagram.
 
 = 1.0.4: July 23, 2015 =
 

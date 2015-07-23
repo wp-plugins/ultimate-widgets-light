@@ -32,3 +32,6 @@ div.updated.uwl-updated {border-color: #4dbefa;}
 	.uwl-nag .text{max-width: 95%;}
 	.uwl-nag .uwl-button a{display: inline-block; float: none; margin: 0;}
 }
+
+/*dashboard latest posts of KhoThemes*/
+#kt_dashboard_widget_uwl a.rsswidget { font-weight: 400; }

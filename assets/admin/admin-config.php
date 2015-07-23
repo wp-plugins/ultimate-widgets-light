@@ -127,6 +127,14 @@ Redux::setSection( $opt_name, array(
             'off'       => __( 'Off', 'kho' ),
         ),
         array(
+            'id'        => 'instagram',
+            'type'      => 'switch', 
+            'title'     => __( 'Instagram Widget', 'kho' ),
+            "default"   => '1',
+            'on'        => __( 'On', 'kho' ),
+            'off'       => __( 'Off', 'kho' ),
+        ),
+        array(
             'id'        => 'mailchimp',
             'type'      => 'switch', 
             'title'     => __( 'MailChimp Widget', 'kho' ),
