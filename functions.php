@@ -7,7 +7,7 @@ Author: Khothemes
 Author URI: http://khositeweb.com/
 Text Domain: kho
 Domain Path: /languages/
-Version: 1.0.3
+Version: 1.0.4
 */
 
 /*  Copyright 2007-2015 Khothemes
@@ -29,7 +29,7 @@ Version: 1.0.3
 
 define( 'UWL_PLUGIN', __FILE__ );
 define( 'UWL_PLUGIN_DIR', untrailingslashit( dirname( UWL_PLUGIN ) ) );
-define( 'UWL_VERSION', '1.0.3' );
+define( 'UWL_VERSION', '1.0.4' );
 
 function uwl_plugin_url( $path = '' ) {
 	$url = plugins_url( $path, UWL_PLUGIN );
