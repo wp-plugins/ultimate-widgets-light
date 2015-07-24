@@ -60,7 +60,8 @@ if ( function_exists( 'uwl_supports' ) && uwl_supports( 'primary', 'admin' ) ) {
 	// Register all the main options
 	require_once( UWL_PLUGIN_DIR .'/assets/admin/admin-config.php' );
 	// Dashboard widget
-	if ( !is_plugin_active( 'ultimate-widgets/functions.php' ) ) {
+	include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+	if ( is_plugin_inactive( 'ultimate-widgets/functions.php' ) ) {
 		require_once( UWL_PLUGIN_DIR .'/assets/admin/dashboard.php' );
 	}
 }
