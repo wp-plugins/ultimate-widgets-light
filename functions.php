@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Ultimate Widgets Light
-Plugin URI: http://khositeweb.com/ultimate-widgets/
+Plugin URI: http://khothemes.com/ultimate-widgets/
 Description: Ultimate Widgets plugin allows you to add the most popular widgets like Ads, Contact Info, Facebook Page Plugin, Google Map, Testomonial, Twitter Widget, Social Widget, Soundclound, etc...
 Author: Khothemes
-Author URI: http://khositeweb.com/
+Author URI: http://khothemes.com/
 Text Domain: kho
 Domain Path: /languages/
 Version: 1.1
