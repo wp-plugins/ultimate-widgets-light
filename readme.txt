@@ -1,7 +1,7 @@
 === Ultimate Widgets Light ===
 Contributors: Khothemes
 Donate link: http://khothemes.com/ultimate-widgets/
-Tags: about me widget, ads widget, banner widget, calendar widget, contact info widget, custom links widget, facebook widget, flickr widget, google map widget, instagram widget, login widget, mailchimp widget, menu widget, posts slider widget, posts thumbnails widget, search widget, slideshow widget, social widget, soundcloud widget, tabs widget, testimonial widget, text widget, twitter widget, video widget, weather widget, wordpress widgets
+Tags: about me widget, ads widget, banner widget, calendar widget, contact info widget, custom links widget, facebook widget, flickr widget, google map widget, instagram widget, login widget, mailchimp widget, menu widget, posts slider widget, posts thumbnails widget, search widget, slideshow widget, social widget, soundcloud widget, tabs widget, testimonial widget, text widget, twitter widget, video widget, weather widget, wordpress widgets, theme widgets
 Requires at least: 4.1
 Tested up to: 4.2.3
 Stable tag: 1.1
