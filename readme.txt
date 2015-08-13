@@ -18,8 +18,11 @@ Widgets have long been a feature of WordPress with a number of default widgets b
 
 = Press Commentary =
 
+“Ultimate Widgets is a great utility plugin for all genres of websites, and you can use it to show different types of widgets on your website. It is surely worth giving a spin, especially if you are looking to improve the appearance of your website’s sidebar or footer widget regions.”<br>
+[WPMayor](http://www.wpmayor.com/ultimate-widgets-review/)
+
 “This is a great little plugin with some good attractive widgets that will come in handy for most websites, saving you the time of coding them by hand or seeking out separate plugins for each feature you wish to add.”<br>
-[wplift](http://wplift.com/custom-widgets-wordpress-plugin/)
+[WPLift](http://wplift.com/custom-widgets-wordpress-plugin/)
 
 = Light Version =
 
@@ -30,7 +33,7 @@ Widgets have long been a feature of WordPress with a number of default widgets b
 * [MailChimp Widget](http://khothemes.com/preview/ultimate-widgets/uw-mailchimp/) - Displays subscription form.
 * [Menu Widget](http://khothemes.com/preview/ultimate-widgets/uw-menu/) - Displays a custom menu.
 
-= Pro Version for only $19 =
+= Pro Version for only $20 =
 
 * [About Me Widget](http://khothemes.com/preview/ultimate-widgets/uw-about-me/) - A widget that talks to you.
 * [Ads Widget](http://khothemes.com/preview/ultimate-widgets/uw-ads/) - Display ads in your sidebar.
